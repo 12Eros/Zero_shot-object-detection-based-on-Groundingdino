@@ -4,22 +4,32 @@
 │
 ├──实验报告.md                                 # 报告
 │
-├── README.md                                   # 项目说明文档                                                           │
-├──基础推理测试                                            # 简单的对单张图片推理                                                  │                                                                                                                                           ├──labels integration.py              # 将COCO数据集提供的标签融合为标准coco格式
+├── README.md                                   # 项目说明文档                                                                                                      
 │
-├──coco2odvg(Open-GroundingDINO提供).py #将coco格式标签转换为odvg格式│
-├──eval on coco.py                             # 验证groundingdino在COCO验证集上的表现│
+├──基础推理测试                      # 简单的对单张图片推理                                                                                                          
+│                                                                                                                                                         
+├──labels integration.py              # 将COCO数据集提供的标签融合为标准coco格式
+│
+├──coco2odvg(Open-GroundingDINO提供).py #将coco格式标签转换为odvg格式
+│
+├──eval on coco.py                             # 验证groundingdino在COCO验证集上的表现
+│
 ├──prompt_comparison.py       # 提示词工程，比较三种提示词
 │
 ├──random sampling.py        # 将标签文件缩小(随机采样),减少训练的样本量
 │
-├──split_odvg_seen65unseen15.py      # 分割数据集(65seen和15unseen)               │
+├──split_odvg_seen65unseen15.py      # 分割数据集(65seen和15unseen)               
+│
 ├──val labels split seen unseen to coco.py  # 验证集分割并转为COCO格式(不变)
 │
-├──trained_model_eval.py              # 验证训练后的模型在unseen类上的表现         │
+├──trained_model_eval.py              # 验证训练后的模型在unseen类上的表现         
+│
 ├──visualized prompt comparison.py   # 三种提示词的可视化对比
-│                                                                                                                                        ├──Prompt Ensembling.py       # 多提示词集成                                                                         │
-├──train.bat   #在open-groundingdino环境下运行，<u>其中的路径需做对应修改</u>                                                                                                          │
+│                                                                                                                                        
+├──Prompt Ensembling.py       # 多提示词集成                                                                         
+│
+├──train.bat   #在open-groundingdino环境下运行，<u>其中的路径需做对应修改</u>  
+│
 └──训练配置文件   # 训练groundingdino的配置文件，<u>注意数据集和配置文件路径</u>
 
 ***<u>运行时请对应修改代码中的权重和模型配置文件路径以及数据集路径并根据代码中存放结果的路径在项目中创建对应的目录。推理时需要bert-base-uncased，可尝试手动下载，并放在程序的同级目录下。</u>***
