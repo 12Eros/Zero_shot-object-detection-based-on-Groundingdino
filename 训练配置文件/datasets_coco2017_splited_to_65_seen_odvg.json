@@ -1,0 +1,18 @@
+{
+  "train": [
+    {
+      "root": "D:/COCO/train_img/train2017",
+      "anno": "D:/COCO/annotations_train_val/train_labels_odvg_train_0-64_1_5.json",
+      "label_map": "F:/Open-GroundingDino-main/Open-GroundingDino-main/config/label_map.json",
+      "dataset_mode": "odvg"
+    }
+  ],
+  "val": [
+    {
+      "root": "D:/COCO/val_img/val2017",
+      "anno": "D:/COCO/annotations_train_val/val_labels_unseen_cocoformat(15).json",
+      "label_map": null,
+      "dataset_mode": "coco"
+    }
+  ]
+}
